@@ -30,7 +30,7 @@ def main(Host, Interface, Packet, Duration):
 
     while time.time() < end_time and packet_count < Packet:
         sendp(packet,iface=Interface)
-        packet_count += 0
+        packet_count += 1
 
     print("\nCompleted!")
 
